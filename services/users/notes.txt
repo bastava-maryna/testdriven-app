@@ -3,3 +3,21 @@
  git remote add origin https://gitapp/.git/hub.com/bastava-maryna/testdriven-app.git
 
  git commit -m "initial commit"
+
+
+---------------------------------------------
+ docker-compose -f docker-compose-dev.yml build
+ #run or update container
+ docker-compose -f docker-compose-dev.yml up -d
+ docker-machine ip testdriven-dev
+ http://DOCKER_MACHINE_IP:5001/users/ping
+ check result
+ ---------------------------------------------------
+
+ # view logs
+ docker-compose -f docker-compose-dev.yml logs
+
+ ------------------------------------
+ #for sanity check
+ docker-compose -f docker-compose-dev.yml up -d --build
+ http://DOCKER_MACHINE_IP:5001/users/ping
