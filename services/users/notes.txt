@@ -1,1 +1,5 @@
  env\scripts\activate
+
+ git remote add origin https://gitapp/.git/hub.com/bastava-maryna/testdriven-app.git
+
+ 
